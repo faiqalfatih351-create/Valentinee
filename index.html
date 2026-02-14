@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Elzasinta Tersayang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; }
+        .font-romance { font-family: 'Dancing Script', cursive; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="bg-pink-50 text-gray-800 overflow-x-hidden">
+
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-6">
+        <div class="animate-float mb-8 text-6xl">💖</div>
+        <h1 class="text-5xl md:text-7xl font-romance text-pink-600 mb-4">Hai, Elzasinta Annazwa</h1>
+        <p class="text-xl md:text-2xl text-pink-400 font-medium">Favoritku sejak SMP sampai sekarang.</p>
+        <div class="mt-10 animate-bounce">
+            <p class="text-sm uppercase tracking-widest text-gray-400">Scroll ke bawah, Elza!</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-pink-500">3 Tahun Bareng Kamu...</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-pink-100 rounded-2xl shadow-sm border-l-4 border-pink-500">
+                    <h3 class="font-bold text-pink-600">Zaman SMP</h3>
+                    <p class="text-gray-600 mt-2">Awal mula semuanya dimulai. Dari malu-malu sampai akhirnya tahu kalau kamu itu orangnya sempurna banget buat aku gaada kurangnya. (mines pendek aja) </p>
+                </div>
+                <div class="p-6 bg-pink-100 rounded-2xl shadow-sm border-l-4 border-pink-500">
+                    <h3 class="font-bold text-pink-600">Kelas 2 SMA (Sekarang)</h3>
+                    <p class="text-gray-600 mt-2">Sudah 3 tahun, dan rasa sayangnya nggak berkurang sedikitpun. Kita udah tumbuh bareng2! sampe nikah ya cantik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-pink-50 overflow-hidden">
+        <div class="max-w-2xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold mb-8">Fakta Menarik Tentang faiq dan elsa:</h2>
+            <div class="flex items-end justify-center gap-10 h-64 border-b-2 border-pink-200">
+                <div class="w-16 bg-pink-400 rounded-t-lg flex items-center justify-center text-white font-bold h-full">Faiq</div>
+                <div class="w-16 bg-pink-300 rounded-t-lg flex items-center justify-center text-white font-bold h-24 animate-pulse">Elza</div>
+            </div>
+            <p class="mt-6 text-lg italic text-pink-600">
+                "aku tau kamu pendek sekali kalau berdiri di sampingku, tapi di hatiku, kamu sayangkuu cintakuu, yang paling tinggi derajatnya! ❤️"
+            </p>
+        </div>
+    </section>
+
+    <section class="py-32 bg-pink-600 text-white text-center px-6">
+        <h2 class="text-4xl md:text-6xl font-romance mb-8">Will you be my Valentine (again), Elsa?</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <button onclick="alert('I love you more! ❤️')" class="bg-white text-pink-600 px-10 py-3 rounded-full font-bold hover:bg-pink-100 transition shadow-lg">YES!</button>
+            <button onmouseover="moveButton(this)" class="bg-transparent border-2 border-white px-10 py-3 rounded-full font-bold transition">No (Kalo klik ini gabisa makan dimsum)</button>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-pink-300 text-sm">
+        Dibuat dengan cinta❤  Untuk Elzasinta Annazwa
+    </footer>
+
+    <script>
+        function moveButton(btn) {
+            btn.style.position = 'absolute';
+            btn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+            btn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+        }
+    </script>
+</body>
+</html>
